@@ -972,75 +972,294 @@ h23::after {
 
 
 
-/* Media Queries */
-@media screen and (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
+* Mídia queries */
+@media screen and (max-width:600px) {
+    /* Ajustes gerais */
+    body {
+        font-size: 10px;
+
+
+    }
+    .barlow-thin{
+        font-size: 20px;
+        top:30px;
+        margin-top:-10%;
     }
 
-    .nav .navitems {
-        margin-top: 10px;
-    }
-
-    .cards {
-        height: auto; /* Altura automática para ajustar o conteúdo */
-    }
-
-    .cards button {
-        width: 100%; /* Botões ocupam 100% da largura */
-        margin-top: 10px; /* Espaçamento superior para os botões */
-    }
-
-    .image-container {
-        height: 300px; /* Ajusta a altura da imagem com texto sobreposta */
-    }
-
-    .image-container:hover::before {
-        content: none; /* Remove o efeito de hover no texto sobreposto */
-    }
-
-    .frame-contact {
-        height: auto; /* Altura automática para ajustar o conteúdo */
-        padding: 10px; /* Espaçamento interno menor */
-    }
-
-    .label_frame {
-        gap: 10px; /* Espaçamento menor entre os elementos */
-    }
-
-    .footer {
-        padding: 10px; /* Espaçamento interno menor */
-    }
-}
-
-@media screen and (max-width: 480px) {
     h1 {
-        font-size: 32px; /* Reduz o tamanho do título h1 */
+        font-size: 30px;
     }
 
     h2 {
-        font-size: 40px; /* Reduz o tamanho do título h2 */
+        font-size: 10px;
+        top:10px;
+        margin-top: 10%;
+
     }
 
-    .blockquote {
-        font-size: 18px; /* Reduz o tamanho da citação */
+    blockquote {
+        font-size: 10px;
+        padding-top: 10px;
+        top:-30px;
+        margin-top: 10%;
+
+    }
+    
+
+    .nav {
+        display: none;
+    
+    }
+    .github, .linkedin {
+        margin-left: 0;
+        width: 30px;
+        margin-top: 10px;
     }
 
     .gallery {
-        display: none; /* Oculta a galeria em telas menores */
+        display: none;
+    
     }
+    h7{
+        font-size: 20px;
+        top:40px;
+        margin-top: -8%;
+        margin-left: 40%;
 
-    .cards {
-        margin-left: 5%; /* Reduz o espaçamento à esquerda */
-    }
 
-    .image-container {
-        height: 200px; /* Ajusta a altura da imagem com texto sobreposta */
-    }
 
-    .frame-contact {
-        padding: 5px; /* Espaçamento interno menor */
     }
+    h8{
+        font-size:30px ;
+        top: -30px;
+        margin-top: -20%;
+        color:white;
+    }
+    .glass-frame{
+        grid-template-columns: repeat(3,1fr);
+        display: flex;
+        top:60px;
+        margin-top: 35%;
+        height: 100%;
+        width:100%;
+
+        
+
+    }
+    .carousel{
+     display:flex;
+     width: 100%; /* Largura fixa do cartão */
+     height: 80%; /* Altura fixa do cartão */
+     gap: 5px;
+     border-radius: 18px; /* Borda arredondada */
+     overflow: hidden; /* Para garantir que a imagem não exceda os limites do cartão */
+     position: relative; /* Define a posição para garantir que o overflow seja aplicado corretamente */
 }
+
+    
+    .icons-cards:img {
+        grid-template-columns: repeat(5,1fr);
+        width: 50%; /* Largura fixa do cartão */
+        height: 50%; /* Altura fixa do cartão */
+        gap: 5px;
+        border-radius: 18px; /* Borda arredondada */
+        overflow: hidden; /* Para garantir que a imagem não exceda os limites do cartão */
+        position: relative; /* Define a posição para garantir que o overflow seja aplicado corretamente */
+    }
+    
+    .icons-cards:hover {
+        transform: rotateY(180deg); /* Aplica o flip vertical */
+    }
+
+.icons{
+        grid-template-columns: repeat(5,1fr);
+        width: 50%; /* Largura fixa do cartão */
+        height: 50%; /* Altura fixa do cartão */
+        gap: 2px;
+        border-radius: 18px; /* Borda arredondada */
+        overflow: hidden; /* Para garantir que a imagem não exceda os limites do cartão */
+        position: relative; 
+}
+
+    
+
+    .cards3 {
+        width: 150px;
+    }
+
+    .grid-container2 {
+        top:1000px;
+        margin-top: 160%;
+        font-size: 18px;
+        grid-template-columns: repeat(1, 1fr); /* Altera para uma única coluna */
+    }
+
+    .container-soft {
+        display: flex;
+        align-items: center; 
+        justify-items: center; 
+        margin-top: 290%; 
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .image-container {
+        height: 300px; /* Altura fixa para o container de imagem */
+    }
+    
+
+h6{
+font-size:30px;
+top:600px;
+justify-items: center;
+margin-top:100%;
+margin-left: 10%;
+
+}
+h3{
+    font-size: 12px;
+    margin: right 200px;
+    align-items: center;
+}
+.cards {
+    grid-template-columns: repeat(1, 1fr); /* Altera para uma única coluna */
+}
+
+.cards h3 {
+    margin: 0; /* Remove margens adicionais */
+}
+
+p{
+font-size: 18px;
+
+
+}
+.icons-background{
+    grid-template-columns: repeat(5,1fr);
+}
+h10{
+    top:1000px;
+    margin-top: -40%;
+    font-size: 25px;
+    margin-left: 10%;
+}
+
+
+h19{
+    top:-130px;
+    margin-top:-20%;
+}
+
+.glass-letter{
+    width: 100%;
+    margin-left: 0%;
+}
+
+.cover-glass{
+    width: 80%;
+    margin-left: 0%;
+
+}
+
+h17{
+    font-size: 20px;
+    margin-left: 0%;
+    top: -20px;
+    margin-top: -2%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.h11 {
+    font-size: 24px;
+    text-align: center;
+    top: -10px;
+    margin-top: -8%;
+}
+
+.image-container {
+    display:none;
+}
+
+.frame-contact {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    gap: 20px;
+}
+
+.label_frame {
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-right: 50%;
+}
+
+.Email, .Contato {
+    border: 0px solid #000000;
+    padding: 10px;
+    border-radius: 5px;
+    top: 100px;
+    margin-top: 10%;
+    grid-template-columns: 1, 1fr;
+    display: block;
+}
+
+    
+
+
+.email-content, .contato-content {
+    text-align: center;
+    margin-left: 30%;
+    width: 100%;
+    gap: 20px;
+}
+
+.email-content h3, .contato-content h4 {
+    font-size: 14px;
+    margin-left: 10%;
+}
+
+.email-content p, .contato-content p {
+    font-size: 12px;
+    margin-left: 10%;
+}
+
+.btn_frame{
+    margin-left: 30%;
+
+}
+.contato-content{
+top: 200px;
+margin-top: 10%;
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
