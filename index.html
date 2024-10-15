@@ -217,7 +217,7 @@
     <h1 class="h11">Contate-me</h1>
 
     <div class="image-container">
-        <!-- Aqui pode conter a imagem de fundo -->
+     
     </div>
 <div class="frame-contact">
     <div class="label_frame">
@@ -239,20 +239,19 @@
 </div>
         <button class="btn_frame" id="downloadButton">Baixar Currículo</button>
 <script>document.getElementById("downloadButton").addEventListener("click", function() {
-    // URL do arquivo PDF que você quer baixar
+  
     var url = ".anima/Kelly Cristina.pdf";
     
-    // Criar um link temporário
+
     var link = document.createElement("a");
     link.href = url;
     
     // Definir o atributo "download" para forçar o download
     link.setAttribute("download", "");
     
-    // Adicionar o link ao corpo do documento
+  
     document.body.appendChild(link);
-    
-    // Clicar no link para iniciar o download
+
     link.click();
     
     // Remover o link temporário do documento
